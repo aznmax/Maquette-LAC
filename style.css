@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+}
+
+/* Header Part */
+
+header nav {
+    display: flex;
+}
+
+header .logoImg {
+    position: absolute;
+    left: 50px;
+    background-image: url("./assets/logo_lac.jpg");
+    background-repeat: no-repeat;
+    width: 9%;
+    height: 50px;
+    background-size: contain;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+header nav ul {
+    display: block;
+    margin: auto;
+}
+
+header nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 50px;
+    line-height: 90px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+/* header nav ul li:hover {
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    border-radius: 5%;
+    background: black;
+    color: #fff;
+    opacity: 0;
+    opacity: 1;
+} */
+
+/* Container Banner */
+
+.container {
+    margin-top: 50px;
+}
+
+/* Image Settings */
+
+.container .img_picture {
+    background-image: url("./assets/patisseries.jpg");
+    background-position: top center;
+    width: 95%;
+    height: 25vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    margin: auto;
+}
+
+/* Container Bannière Texte */
+
+.containter_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containter_text h2 {
+    margin: 0;
+    color: #fff;
+    margin-top: 80px;
+    padding-left: 20%;
+}
+
+.containter_text p {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Libre Baskerville", serif;
+    max-width: 300px;
+    margin-top: 60px;
+    padding-left: 20%;
+}
+.container_cake .media {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Homepage Cake grid */
+
+.global_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container_cake {
+    width: 30%;
+    margin-left: 30px;
+    transition: all 0.6s;
+}
+
+.container_cake:hover {
+    transform: scale(1.1);
+}
+
+.container_cake .img_cake img {
+    width: 100%;
+}
+/* Last Cake position  */
+
+.container_cake:nth-child(22) {
+    margin-right: auto;
+}
+
+.text_cake {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text_cake h2 {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.text_cake span {
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+/* Delivery Part */
+
+.DeliveryPart {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background: #e55049;
+    margin-top: 60px;
+}
+
+.containerDelivery {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+.containerDelivery .text_content {
+    transition: all 0.6s;
+}
+
+.containerDelivery .text_content:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive design mobile */
+
+@media screen and (max-width: 428px) {
+    body {
+        margin: 0px;
+    }
+
+    /* Header */
+
+    header nav {
+        display: flex;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        text-align: center;
+        margin-left: 50px;
+        line-height: 90px;
+        font-size: 14px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+    header .logoImg {
+        position: absolute;
+        left: 50px;
+        background-image: url("./assets/logo_lac.jpg");
+        background-repeat: no-repeat;
+        width: 25%;
+        height: 50px;
+        background-size: contain;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    /* Section Banner */
+
+    .container .img_picture {
+        background-image: url("./assets/patisseries.jpg");
+        background-position: top center;
+        width: 100%;
+        background-repeat: no-repeat;
+        display: block;
+        margin: auto;
+    }
+
+    /* Containter text */
+
+    .container_text {
+        display: flex;
+        height: 300px;
+        align-items: center;
+        max-width: 300px;
+    }
+
+    .containter_text h2 {
+        text-align: center;
+        font-size: 16px;
+        text-shadow: center;
+        margin-top: 0;
+    }
+
+    .containter_text p {
+        font-size: 14px;
+        max-width: 600px;
+        margin-top: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* Global Container */
+    .global_container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    .container_cake {
+        width: 50%;
+        margin-left: 30px;
+        transition: all 0.6s;
+    }
+
+    .container_cake:hover {
+        transform: scale(1.1);
+    }
+
+    .container_cake .img_cake img {
+        width: 100%;
+    }
+
+    .container_cake:nth-child(22) {
+        margin: auto;
+    }
+
+    /* Delivery Part */
+
+    .DeliveryPart {
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .DeliveryPart .containerDelivery {
+        display: block;
+    }
+
+    .DeliveryPart .text_content {
+        margin-top: 80px;
+        margin: 0;
+    }
+}
